@@ -32,6 +32,6 @@ class Calculator:
         return self.result
 
     def sqrt(self, a, b):
-        self.result = Sqrt(a, b)
+        self.result = Square_Root(a, b)
         return self.result
 

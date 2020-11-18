@@ -1,6 +1,6 @@
 """UnitTest"""
-import Square
-import Subtraction
+import unittest
+
 
 x = Square.square(10)
 print("The square of 10 is: ", x)
@@ -24,4 +24,3 @@ print('sidney\'s name equals: ', sidney)
 
 # if __name__ == '__main__':
 #   unittest.main()
-
