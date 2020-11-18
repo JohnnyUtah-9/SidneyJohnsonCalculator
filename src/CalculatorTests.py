@@ -19,35 +19,35 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.result, result)
 
     def test_subtraction_calculator(self):
-        test_data = CsvReader("src/TestData/Subtraction.csv").data
+        test_data = Csv_Reader("src/TestData/Subtraction.csv").data
         for row in test_data:
             result = int(row['Result'])
             self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), result)
             self.assertEqual(self.calculator.result, result)
 
     def test_multiplication_calculator(self):
-        test_data = CsvReader("src/TestData/Multiplication.csv").data
+        test_data = Csv_Reader("src/TestData/Multiplication.csv").data
         for row in test_data:
             result = int(row['Result'])
             self.assertEqual(self.calculator.multiply(row['Value 1'], row['Value 2']), result)
             self.assertEqual(self.calculator.result, result)
 
     def test_division_calculator(self):
-        test_data = CsvReader("src/TestData/Division.csv").data
+        test_data = Csv_Reader("src/TestData/Division.csv").data
         for row in test_data:
             result = round(float(row['Result']), 7)
             self.assertEqual(self.calculator.divide(row['Value 1'], row['Value 2']), result)
             self.assertEqual(self.calculator.result, result)
 
     def test_square_calculator(self):
-        test_data = CsvReader("src/TestData/Square.csv").data
+        test_data = Csv_Reader("src/TestData/Square.csv").data
         for row in test_data:
             result = int(row['Result'])
             self.assertEqual(self.calculator.sqr(row['Value 1']), result)
             self.assertEqual(self.calculator.result, result)
 
     def test_sqrt_method_calculator(self):
-        test_data = CsvReader("src/TestData/SquareRoot.csv").data
+        test_data = Csv_Reader("src/TestData/SquareRoot.csv").data
         for row in test_data:
             result = round(float(row['Result']), 7)
             self.assertEqual(self.calculator.sqrt(row['Value 1']), result)
@@ -57,7 +57,7 @@ class MyTestCase(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
-#x = Square.square(10)
+"""#x = Square.square(10)
 #print("The square of 10 is: ", x)
 
 #y = Subtraction.subtraction(10, 20)
@@ -78,4 +78,4 @@ if __name__ == '__main__':
 #       self.assertEqual(1, 1)
 
 # if __name__ == '__main__':
-#   unittest.main()
+#   unittest.main()"""
