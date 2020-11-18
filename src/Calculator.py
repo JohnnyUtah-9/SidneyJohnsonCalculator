@@ -2,7 +2,7 @@ from src import Addition
 from src import Multiplication
 from src import Square_Root
 from src import Square
-from src import Divison
+from src import Division
 from src import Subtraction
 
 class Calculator:
@@ -24,7 +24,7 @@ class Calculator:
         return self.result
 
     def divide(self, a, b):
-        self.result = Divison(a, b)
+        self.result = Division(a, b)
         return self.result
 
     def sqr(self, a):
