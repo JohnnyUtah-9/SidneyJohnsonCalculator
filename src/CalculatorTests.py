@@ -43,14 +43,14 @@ class MyTestCase(unittest.TestCase):
         test_data = Csv_Reader("src/TestData/Square.csv").data
         for row in test_data:
             result = int(row['Result'])
-            self.assertEqual(self.calculator.sqr(row['Value 1']), result)
+            self.assertEqual(self.calculator.square(row['Value 1']), result)
             self.assertEqual(self.calculator.result, result)
 
-    def test_sqrt_method_calculator(self):
+    def test_square_root_method_calculator(self):
         test_data = Csv_Reader("src/TestData/SquareRoot.csv").data
         for row in test_data:
             result = round(float(row['Result']), 7)
-            self.assertEqual(self.calculator.sqrt(row['Value 1']), result)
+            self.assertEqual(self.calculator.square_root(row['Value 1']), result)
             self.assertEqual(self.calculator.result, result)
 
 

@@ -3,7 +3,7 @@
 
 def square(a):
     """Square function: square of a number"""
-    return a * a
+    return int(a) * int(a)
 
 
 """Testing"""
