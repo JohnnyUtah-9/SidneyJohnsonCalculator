@@ -36,7 +36,7 @@ class MyTestCase(unittest.TestCase):
         test_data = Csv_Reader("src/TestData/Division.csv").data
         for row in test_data:
             result = round(float(row['Result']), 7)
-            self.assertEqual(self.calculator.divide(row['Value 1'], row['Value 2']), result)
+            self.assertEqual(self.calculator.divide(row['Value 2'], row['Value 1']), result)
             self.assertEqual(self.calculator.result, result)
 
     def test_square_calculator(self):

@@ -1,2 +1,2 @@
 def sqrt(a):
-    return a ** .5
+    return int(a) ** .5
